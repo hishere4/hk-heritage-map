@@ -103,26 +103,38 @@ export default function Sidebar({ item, onClose }: SidebarProps) {
           {images.length > 0 && (
             <div className="mb-4">
               <div 
-                className="relative w-full h-56 rounded-lg overflow-hidden cursor-pointer group"
+                className="relative w-full h-56 rounded-lg overflow-hidden cursor-pointer group bg-gray-100"
                 onClick={() => openLightbox(0)}
               >
                 <img
                   src={images[0].url}
                   alt={images[0].caption || item.name}
                   className="w-full h-full object-cover"
+                  loading="lazy"
                   onError={(e) => {
-                    console.error('Image failed to load:', images[0].url);
-                    (e.target as HTMLImageElement).style.display = 'none';
+                    console.error('Image failed:', images[0].url);
+                    // 顯示 placeholder
+                    const target = e.target as HTMLImageElement;
+                    target.style.display = 'none';
+                    const parent = target.parentElement;
+                    if (parent) {
+                      parent.innerHTML = `
+                        <div class="w-full h-full flex flex-col items-center justify-center text-gray-400">
+                          <span class="text-4xl mb-2">🏛️</span>
+                          <span class="text-sm">${item.name}</span>
+                        </div>
+                      `;
+                    }
                   }}
                 />
-                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center">
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center pointer-events-none">
                   <span className="text-white opacity-0 group-hover:opacity-100 transition-opacity text-sm font-medium">
                     🔍 點擊放大
                   </span>
                 </div>
                 
                 {images.length > 1 && (
-                  <div className="absolute top-2 right-2 bg-black/60 text-white text-xs px-2 py-1 rounded-full">
+                  <div className="absolute top-2 right-2 bg-black/60 text-white text-xs px-2 py-1 rounded-full pointer-events-none">
                     1 / {images.length}
                   </div>
                 )}
@@ -133,13 +145,14 @@ export default function Sidebar({ item, onClose }: SidebarProps) {
                   {images.slice(1).map((img, idx) => (
                     <div
                       key={idx + 1}
-                      className="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden cursor-pointer hover:opacity-80"
+                      className="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden cursor-pointer hover:opacity-80 bg-gray-100"
                       onClick={() => openLightbox(idx + 1)}
                     >
                       <img
                         src={img.url}
                         alt={img.caption || `${item.name} ${idx + 2}`}
                         className="w-full h-full object-cover"
+                        loading="lazy"
                         onError={(e) => {
                           (e.target as HTMLImageElement).style.display = 'none';
                         }}
