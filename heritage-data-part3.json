@@ -1,0 +1,142 @@
+{
+  "heritage_items": [
+    {
+      "name": "中式長衫製作技藝",
+      "name_en": "Cheongsam Making",
+      "category": "crafts",
+      "description": "長衫（旗袍）係華人傳統服飾，香港嘅長衫製作技藝融合咗傳統同工藝，講究貼工同埋剪裁。",
+      "description_en": "Cheongsam (qipao) is a traditional Chinese dress, with Hong Kong tailoring known for exquisite craftsmanship.",
+      "history": "長衫起源於清朝滿人服飾，民國時期演變為華人女性嘅代表性服裝。20世紀中葉，上海裁縫師傅南嚟香港，帶嚟精湛嘅長衫製作技藝。香港長衫以貼工精細、合身剪裁聞名，曾經係香港女性嘅日常服飾。2014年列入香港非遺。",
+      "cultural_significance": "長衫代表咗華人女性嘅優雅同自信。一件好嘅長衫要經過量度、裁剪、貼製等幾十道工序，體現咗「工藝」精神。而家長衫更多係喺特別場合著，成為文化傳承嘅象徵。",
+      "recognition_year": 2014,
+      "wikipedia_url": "https://zh.wikipedia.org/wiki/旗袍",
+      "official_website": null,
+      "references": [
+        { "title": "維基百科 - 旗袍", "url": "https://zh.wikipedia.org/wiki/旗袍" }
+      ],
+      "fun_facts": [
+        "一件傳統長衫要縫製幾百針",
+        "長衫強調「貼工不見線」",
+        "香港曾經有超過1,000間長衫店"
+      ],
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Cheongsam_Hong_Kong.jpg/800px_Cheongsam_Hong_Kong.jpg"
+      ]
+    },
+    {
+      "name": "跌打",
+      "name_en": "Traditional Bone-setting",
+      "category": "folklore",
+      "description": "跌打係中國傳統醫術，專治骨折、脫臼、筋骨損傷，結合推拿、草藝同外敷治療。",
+      "description_en": "Traditional bone-setting treats fractures, dislocations and injuries using massage, herbal medicine and external treatments.",
+      "history": "跌打醫術源遠流長，結合咗武術同醫學知識。香港開埠後，唔少武術師傅都精通跌打，為勞工階層提供醫療服務。香港嘅跌打館遍佈各區，係基層市民嘅醫療選擇之一。2014年列入香港非物質文化遺產清單。",
+      "cultural_significance": "跌打體現咗「醫武同源」嘅傳統理念。跌打師傅唔單止醫治身體，更傳授保健知識，係社區健康嘅守護者。",
+      "recognition_year": 2014,
+      "wikipedia_url": "https://zh.wikipedia.org/wiki/跌打",
+      "official_website": null,
+      "references": [
+        { "title": "維基百科 - 跌打", "url": "https://zh.wikipedia.org/wiki/跌打" }
+      ],
+      "fun_facts": [
+        "跌打師傅多數都有武術根底",
+        "傳統跌打會用草藝敷患處",
+        "跌打館通常都有武術招牌"
+      ],
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Traditional_Bone_Setting.jpg/800px_Traditional_Bone_Setting.jpg"
+      ]
+    },
+    {
+      "name": "廟宇建築",
+      "name_en": "Traditional Temple Architecture",
+      "category": "folklore",
+      "description": "香港傳統廟宇建築融合咗嶺南風格同地方特色，以磚木結構為主，裝飾講究細節。",
+      "description_en": "Hong Kong traditional temple architecture combines Lingnan style with local features, using brick and wood structures.",
+      "history": "香港嘅傳統廟宇大多建於清朝時期，如文武廟（1847年）、東華三院（1870年）等。建築風格承襲嶺南傳統，講究風水佈局，屋頂有陶塑、灰塑裝飾，牆上有壁畫同磚雕。2014年列入香港非物質文化遺產清單。",
+      "cultural_significance": "廟宇係華人社區嘅精神中心同文化聚腳點。建築細節中嘅吉祥圖案、歷史故事，體現咗傳統價值觀同審美情趣。",
+      "recognition_year": 2014,
+      "wikipedia_url": "https://zh.wikipedia.org/wiki/香港廟宇",
+      "official_website": null,
+      "references": [
+        { "title": "維基百科 - 香港廟宇列表", "url": "https://zh.wikipedia.org/wiki/香港廟宇列表" }
+      ],
+      "fun_facts": [
+        "香港最古老嘅廟宇係茶果嶺天后廟（1740年）",
+        "廟宇屋頂嘅陶塑係石灣名產",
+        "廟宇建築講究風水，多數坐北向南"
+      ],
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Hong_Kong_Temple_Architecture.jpg/800px_Hong_Kong_Temple_Architecture.jpg"
+      ]
+    },
+    {
+      "name": "紥作技藝",
+      "name_en": "Bamboo Scaffolding",
+      "category": "crafts",
+      "description": "紥作（搭棚）係用竹同尼龍篾搭建臨時工作平台嘅技藝，係香港建築業嘅獨特傳統。",
+      "description_en": "Bamboo scaffolding is the traditional craft of building temporary work platforms using bamboo and nylon straps.",
+      "history": "紥作技藝喺香港有超過百年歷史。香港搭棚師傅用竹同尼龍篾，喺幾日內就可以搭建成幾十層樓高嘅棚架。香港係世界上少數仍然廣泛使用竹棚嘅城市，搭棚技藝更係領先全球。2014年列入香港非物質文化遺產清單。",
+      "cultural_significance": "搭棚技藝展現咗香港人嘅靈活同工巧。竹棚輕便、環保、成本低，而且可以快速搭建同拆卸，係香港建築業嘅重要組成部分。",
+      "recognition_year": 2014,
+      "wikipedia_url": "https://zh.wikipedia.org/wiki/香港搭棚業",
+      "official_website": null,
+      "references": [
+        { "title": "維基百科 - 搭棚", "url": "https://zh.wikipedia.org/wiki/搭棚" }
+      ],
+      "fun_facts": [
+        "香港搭棚師傅可以喺幾日內搭幾十層高嘅棚",
+        "竹棚可以承受數以噸計嘅重量",
+        "搭棚係香港獨有嘅傳統建築技術"
+      ],
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Bamboo_Scaffolding_Hong_Kong.jpg/800px_Bamboo_Scaffolding_Hong_Kong.jpg"
+      ]
+    },
+    {
+      "name": "彩瓷",
+      "name_en": "Famille Rose Porcelain",
+      "category": "crafts",
+      "description": "彩瓷係喺瓷器上繪畫彩色圖案嘅工藝，以廣彩最為著名，係廣東地區嘅傳統出口工藝。",
+      "description_en": "Famille rose porcelain involves painting colorful designs on ceramics, with Guangcai being the most famous style from Guangdong.",
+      "history": "廣彩（廣州彩瓷）起源於清朝康熙年間，係為出口歐美而發展嘅工藝。20世紀中葉，唔少廣彩師傅移居香港，繼續發揚呢門技藝。香港廣彩以色彩艷麗、圖案繁複見稱，係本地工藝品市場嘅重要組成。2014年列入香港非物質文化遺產清單。",
+      "cultural_significance": "廣彩係中西文化交流嘅見證，圖案中既有中國傳統元素，亦融入咗歐美審美。佢代表咗華人工藝師嘅創意同適應能力。",
+      "recognition_year": 2014,
+      "wikipedia_url": "https://zh.wikipedia.org/wiki/廣彩",
+      "official_website": null,
+      "references": [
+        { "title": "維基百科 - 廣彩", "url": "https://zh.wikipedia.org/wiki/廣彩" }
+      ],
+      "fun_facts": [
+        "廣彩要用多種顏色層層渲染",
+        "一件廣彩瓷器要繪畫幾日甚至幾星期",
+        "廣彩曾經係歐美貴族嘅珍藏品"
+      ],
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Guangcai_Porcelain.jpg/800px_Guangcai_Porcelain.jpg"
+      ]
+    },
+    {
+      "name": "涼船",
+      "name_en": "Paper Boat Crafting",
+      "category": "crafts",
+      "description": "涼船係用紙紮製作船隻嘅傳統手工藝，多用於祭祀同節慶，係香港漁民社區嘅傳統文化。",
+      "description_en": "Paper boat crafting is a traditional handicraft making paper boats for rituals and festivals, common in Hong Kong fishing communities.",
+      "history": "涼船技藝喺香港漁民社區流傳已久。漁民用竹篾同彩紙製作各式船隻模型，用於祭祀海神、超度亡靈。大澳、長洲等漁村至今仍有傳承呢門技藝嘅師傅。2014年列入香港非物質文化遺產清單。",
+      "cultural_significance": "涼船反映咗漁民對海洋嘅敬畏同依賴。船隻係漁民嘅生計工具，用紙紮船祭祀，象徵對先人嘅懷念同對平安嘅祈求。",
+      "recognition_year": 2014,
+      "wikipedia_url": "https://zh.wikipedia.org/wiki/紙紮",
+      "official_website": null,
+      "references": [
+        { "title": "維基百科 - 紙紮", "url": "https://zh.wikipedia.org/wiki/紙紮" }
+      ],
+      "fun_facts": [
+        "涼船要用竹篾做骨架，再包上彩紙",
+        "傳統涼船有帆船、龍船等唔同款",
+        "涼船多用於祭祀海神同祖先"
+      ],
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Paper_Boat_Crafting.jpg/800px_Paper_Boat_Crafting.jpg"
+      ]
+    }
+  ]
+}

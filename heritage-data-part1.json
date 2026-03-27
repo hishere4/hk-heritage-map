@@ -1,0 +1,179 @@
+{
+  "heritage_items": [
+    {
+      "name": "粵劇",
+      "name_en": "Cantonese Opera",
+      "category": "performing_arts",
+      "description": "粵劇是廣東地區嘅傳統戲曲藝術，融合咗唱、做、唸、打，以粵語演唱，係香港最具代表性嘅非物質文化遺產之一。",
+      "description_en": "Cantonese opera is a traditional art form from Guangdong, featuring singing, acting, reciting and martial arts, performed in Cantonese.",
+      "history": "粵劇起源於明朝，喺清朝發展成熟。20世紀初傳入香港，融合咗本地特色。2009年，粵劇被聯合國教科文組織列入人類非物質文化遺產代表作名錄。香港粵劇發展蓬勃，擁有成熟嘅劇團同埋演出場地如新光戲院、西九戲曲中心。",
+      "cultural_significance": "粵劇唔單止係娛樂，更承載咗廣東話嘅語言文化同埋傳統價值觀。劇目中嘅忠孝節義、歷史故事，係華人社會嘅道德教育重要媒介。",
+      "recognition_year": 2009,
+      "wikipedia_url": "https://zh.wikipedia.org/wiki/粵劇",
+      "official_website": "https://www.lcsd.gov.hk/CE/CulturalService/Cantoneseopera/index.html",
+      "references": [
+        { "title": "維基百科 - 粵劇", "url": "https://zh.wikipedia.org/wiki/粵劇" },
+        { "title": "香港非遺辦事處", "url": "https://www.lcsd.gov.hk/CE/Museum/ICHO/zh_TW/web/icho/home.html" }
+      ],
+      "fun_facts": [
+        "粵劇行當分為十大行，包括文武生、小生、正印花旦等",
+        "傳統粵劇化妝要化兩個鐘頭以上",
+        "香港每年都有粵劇戲棚節，搭建竹棚演出"
+      ],
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Cantonese_Opera_Perfomance.jpg/800px-Cantonese_Opera_Perfomance.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Xiqu_Centre_2019.jpg/800px-Xiqu_Centre_2019.jpg"
+      ]
+    },
+    {
+      "name": "詠春拳",
+      "name_en": "Wing Chun",
+      "category": "martial_arts",
+      "description": "詠春拳係南拳嘅一種，以柔制剛、連消帶打為特色，係葉問宗師發揚光大嘅香港武術。",
+      "description_en": "Wing Chun is a Southern Chinese martial art known for its close-range combat and economy of motion, popularized by Grandmaster Ip Man.",
+      "history": "詠春拳起源於清朝，相傳由嚴詠春所創。20世紀50年代，葉問宗師將詠春拳傳入香港，開館授徒。李小龍、梁朝偉等都曾學習詠春。詠春拳因電影《葉問》系列而揚名國際，成為全球最知名嘅華人武術之一。",
+      "cultural_significance": "詠春拳代表咗華人武術嘅精粹，強調自衛而非攻擊，體現咗儒家嘅謙遜精神。佢更成為香港文化輸出嘅重要符號，全球有數以百萬計嘅練習者。",
+      "recognition_year": 2014,
+      "wikipedia_url": "https://zh.wikipedia.org/wiki/詠春拳",
+      "official_website": null,
+      "references": [
+        { "title": "維基百科 - 詠春拳", "url": "https://zh.wikipedia.org/wiki/詠春拳" },
+        { "title": "香港武術聯會", "url": "https://www.hkwf.org.hk/" }
+      ],
+      "fun_facts": [
+        "詠春拳嘅木人樁係獨特嘅練習工具",
+        "葉問宗師喺香港開設第一間詠春武館",
+        "詠春拳嘅理念係「來留去送，甩手直衝」"
+      ],
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Wing_Chun_Practice.jpg/800px-Wing_Chun_Practice.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Wooden_Dummy_Wing_Chun.jpg/800px-Wooden_Dummy_Wing_Chun.jpg"
+      ]
+    },
+    {
+      "name": "港式奶茶製作技藝",
+      "name_en": "Hong Kong Style Milk Tea",
+      "category": "food_culture",
+      "description": "港式奶茶係香港茶餐廳嘅代表性飲品，以「港女」茶葉、淡奶沖調而成，茶香濃郁、口感順滑。",
+      "description_en": "Hong Kong-style milk tea is a beverage made from Ceylon tea and evaporated milk, known for its strong tea flavor and smooth texture.",
+      "history": "港式奶茶起源於英國下午茶文化傳入香港後嘅本地化。香港人將英國奶茶改良，使用斯里蘭卡「港女」茶葉同淡奶（Evaporated Milk）取代鮮奶，創造出獨特嘅港式風味。2014年，港式奶茶製作技藝列入香港非物質文化遺產清單。2017年更成為香港首項聯合國非遺。",
+      "cultural_significance": "港式奶茶係香港飲食文化嘅象徵，代表咗香港人嘅創意同工藝精神。一杯好嘅奶茶要經過「拉茶」工序，反覆沖調，體現咗香港人對品質嘅執著。",
+      "recognition_year": 2014,
+      "wikipedia_url": "https://zh.wikipedia.org/wiki/港式奶茶",
+      "official_website": null,
+      "references": [
+        { "title": "維基百科 - 港式奶茶", "url": "https://zh.wikipedia.org/wiki/港式奶茶" },
+        { "title": "香港非遺 - 港式奶茶", "url": "https://www.lcsd.gov.hk/CE/Museum/ICHO/zh_TW/web/icho/festival_annual.html" }
+      ],
+      "fun_facts": [
+        "「港女」茶葉其實係斯里蘭卡紅茶",
+        "傳統港式奶茶要用白布茶袋沖調",
+        "「拉茶」係將茶喺兩個茶壺之間嚟回倒"
+      ],
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Hong_Kong_Milk_Tea.jpg/800px-Hong_Kong_Milk_Tea.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/HK_Milk_Tea_Pulling.jpg/800px-HK_Milk_Tea_Pulling.jpg"
+      ]
+    },
+    {
+      "name": "大澳端午遊涌",
+      "name_en": "Tai O Dragon Boat Water Parade",
+      "category": "festivals",
+      "description": "大澳端午遊涌係香港大澳獨有嘅傳統節慶，每年端午節舉行，漁民駕駛神躉喺水道巡遊，祈求風調雨順。",
+      "description_en": "The Tai O Dragon Boat Water Parade is a unique festival in Tai O where fishermen sail deity boats to bless the waters.",
+      "history": "大澳端午遊涌有超過100年歷史，起源於大澳漁民為驅趕瘟疫、祈求平安而舉行嘅祭祀活動。活動中，三艘神躉（天后躉、関帝躉、洪聖躉）由躉棚巡遊大澳水道，沿岸居民燒衣焚香拜祭。2011年列入國家級非遺，2017年成為香港首項聯合國非遺。",
+      "cultural_significance": "大澳端午遊涌展現咗漁民社會嘅宗教信仰同社區凝聚力。活動保留咗傳統嘅祭祀儀式，係研究華南漁民文化嘅活化石。",
+      "recognition_year": 2011,
+      "wikipedia_url": "https://zh.wikipedia.org/wiki/大澳端午遊涌",
+      "official_website": null,
+      "references": [
+        { "title": "維基百科 - 大澳端午遊涌", "url": "https://zh.wikipedia.org/wiki/大澳端午遊涌" },
+        { "title": "香港旅遊發展局", "url": "https://www.discoverhongkong.com/hk-eng/explore/culture/traditional-festivals.html" }
+      ],
+      "fun_facts": [
+        "三艘神躉分別代表天后、関帝、洪聖爺",
+        "神躉要喺躉棚巡遊，唔會落水",
+        "活動已經有超過100年歷史"
+      ],
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Tai_O_Dragon_Boat_Water_Parade.jpg/800px-Tai_O_Dragon_Boat_Water_Parade.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Tai_O_Floating_Boats.jpg/800px-Tai_O_Floating_Boats.jpg"
+      ]
+    },
+    {
+      "name": "古琴藝術",
+      "name_en": "Guqin Art",
+      "category": "performing_arts",
+      "description": "古琴係中國最古老嘅彈撥樂器之一，有超過3000年歷史，被視為文人雅士修身養性嘅工具。",
+      "description_en": "The guqin is one of China's oldest stringed instruments with over 3,000 years of history, associated with scholars and literati.",
+      "history": "古琴起源於西周時期，係中國傳統「四藝」（琴棋書畫）之首。2003年，古琴藝術被聯合國教科文組織列入人類口述同非物質文化遺產代表作。香港古琴文化源遠流長，蔡德允、劉楚華等名家喺香港傳承古琴藝術。",
+      "cultural_significance": "古琴唔單止係樂器，更係中國文人精神嘅象徵。琴音被認為可以陶冶性情、表達志向。古琴曲目多取材自歷史典故，承載深厚嘅文化内涵。",
+      "recognition_year": 2003,
+      "wikipedia_url": "https://zh.wikipedia.org/wiki/古琴",
+      "official_website": null,
+      "references": [
+        { "title": "維基百科 - 古琴", "url": "https://zh.wikipedia.org/wiki/古琴" },
+        { "title": "德愔琴社", "url": "http://www.takwankumshe.org/" }
+      ],
+      "fun_facts": [
+        "古琴有七條絃，代表五行加文武",
+        "傳統古琴用桐木製作，漆以鹿角霜",
+        "古琴譜係世界上最早嘅樂譜之一"
+      ],
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Guqin_Instrument.jpg/800px-Guqin_Instrument.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Playing_Guqin.jpg/800px-Playing_Guqin.jpg"
+      ]
+    },
+    {
+      "name": "長洲太平清醮",
+      "name_en": "Cheung Chau Bun Festival",
+      "category": "festivals",
+      "description": "長洲太平清醮係香港長洲獨有嘅傳統節慶，以搶包山同飄色巡遊聞名，係最具特色嘅香港節慶之一。",
+      "description_en": "The Cheung Chau Bun Festival is a traditional festival featuring bun scrambling and float parades, unique to Cheung Chau island.",
+      "history": "長洲太平清醮起源於清朝，相傳為超度長洲瘟疫死者而舉行。節慶期間，長洲居民茹素三日，舉行搶包山、飄色巡遊等活動。搶包山係喺用包點堆砌成嘅山上搶奪包子，象徵搶得好運。2011年，長洲太平清醮嘅搶包山活動列入國家級非遺。",
+      "cultural_significance": "長洲太平清醮展現咗香港離島社區嘅凝聚力同傳統信仰。節慶結合咗道教儀式、民間信仰同社區娛樂，係香港最具觀賞價值嘅傳統節慶。",
+      "recognition_year": 2011,
+      "wikipedia_url": "https://zh.wikipedia.org/wiki/長洲太平清醮",
+      "official_website": null,
+      "references": [
+        { "title": "維基百科 - 長洲太平清醮", "url": "https://zh.wikipedia.org/wiki/長洲太平清醮" },
+        { "title": "香港旅遊發展局", "url": "https://www.discoverhongkong.com/hk-eng/explore/culture/traditional-festivals.html" }
+      ],
+      "fun_facts": [
+        "搶包山嘅包子係平安包，象徵平安健康",
+        "節慶期間長洲全島食素，連麥當勞都賣素包",
+        "飄色係小童化妝喺高架上巡遊，凌空飄浮"
+      ],
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Cheung_Chau_Bun_Festival.jpg/800px-Cheung_Chau_Bun_Festival.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Bun_Scrambling_Competition.jpg/800px-Bun_Scrambling_Competition.jpg"
+      ]
+    },
+    {
+      "name": "南音",
+      "name_en": "Naamyam",
+      "category": "oral_traditions",
+      "description": "南音係流行於珠江三角洲一帶嘅說唱藝術，以粵語演唱，內容多反映民間生活同歷史故事。",
+      "description_en": "Naamyam is a narrative singing tradition in Cantonese, popular in the Pearl River Delta region, often depicting folk life and historical stories.",
+      "history": "南音起源於清朝中期，由盲眼藝人喺街頭演唱傳播。20世紀初傳入香港，曾經喺茶樓、妓寨流行。南音分為「地水南音」（盲人所唱）同「戲台南音」。地水南音已被列入香港非遺，而家由杜煥、區均祥等傳承人繼承。",
+      "cultural_significance": "南音係粵語口頭文學嘅瑰寶，歌詞講究平仄押韻，內容反映社會百態。佢記錄咗香港開埠初期嘅社會風貌，係珍貴嘅歷史文獻。",
+      "recognition_year": 2014,
+      "wikipedia_url": "https://zh.wikipedia.org/wiki/南音",
+      "official_website": null,
+      "references": [
+        { "title": "維基百科 - 南音", "url": "https://zh.wikipedia.org/wiki/南音" },
+        { "title": "香港電台 - 南音", "url": "https://www.rthk.hk/radio/radio1/programme/naamyam" }
+      ],
+      "fun_facts": [
+        "南音藝人多係盲眼師傅，稱為「瞽師」",
+        "「地水」係周易卦名，代表盲人算命",
+        "南音要用椰胡、箏、簫等傳統樂器伴奏"
+      ],
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Naamyam_Performance.jpg/800px_Naamyam_Performance.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Blind_Musician_Hong_Kong.jpg/800px_Blind_Musician_Hong_Kong.jpg"
+      ]
+    }
+  ]
+}

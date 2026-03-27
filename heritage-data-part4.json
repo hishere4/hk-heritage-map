@@ -1,0 +1,29 @@
+{
+  "heritage_items": [
+    {
+      "name": "中秋節—大坑舞火龍",
+      "name_en": "Mid-Autumn Festival - Tai Hang Fire Dragon",
+      "category": "festivals",
+      "description": "中秋節係華人傳統節日，大坑舞火龍係香港獨有嘅中秋慶祝活動，以67米長嘅火龍喺街頭巡遊，場面壯觀。",
+      "description_en": "The Mid-Autumn Festival is a traditional Chinese festival. The Tai Hang Fire Dragon Dance is a unique Hong Kong celebration featuring a 67-meter dragon.",
+      "history": "中秋節起源於古代中國嘅月亮崇拜，大坑舞火龍則始於1880年。相傳大坑村為驅趕瘟疫而舉行火龍巡遊，沿襲至今成為香港中秋節嘅標誌性活動。2017年，大坑舞火龍被列入聯合國教科文組織人類非物質文化遺產代表作名錄。",
+      "cultural_significance": "中秋節象徵團圓同豐收，大坑舞火龍則展現咗社區嘅團結同心。火龍身上嘅萬支線香代表祈福，係香港最具特色嘅傳統節慶之一。",
+      "recognition_year": 2017,
+      "wikipedia_url": "https://zh.wikipedia.org/wiki/中秋節",
+      "official_website": null,
+      "references": [
+        { "title": "維基百科 - 中秋節", "url": "https://zh.wikipedia.org/wiki/中秋節" },
+        { "title": "大坑舞火龍", "url": "https://zh.wikipedia.org/wiki/大坑舞火龍" }
+      ],
+      "fun_facts": [
+        "中秋節要食月餅同提燈籠",
+        "大坑火龍長67米，要300人舞動",
+        "火龍身上插超過10,000支線香"
+      ],
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Mid_Autumn_Festival_Lanterns.jpg/800px_Mid_Autumn_Festival_Lanterns.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Tai_Hang_Fire_Dragon.jpg/800px_Tai_Hang_Fire_Dragon.jpg"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "heritage_items": [
+    {
+      "name": "涼紮技藝",
+      "name_en": "Paper Crafting",
+      "category": "crafts",
+      "description": "涼紮係香港傳統殯儀手工藝，用竹篾同色紙製作各種祭品，如紙紮公仔、紙紮用品等，用於祭祀先人。",
+      "description_en": "Paper crafting is a traditional funeral art in Hong Kong, using bamboo and colored paper to create offerings for ancestor worship.",
+      "history": "涼紮技藝喺香港有超過百年歷史，主要集中喺香港仔、筲箕灣等舊區。涼紮師傅用竹篾搭架，再以色紙黐貼，製作出各式各樣嘅祭品，如紙紮公仔、紙紮大屋、紙紮汽車等。2014年，涼紮技藝列入香港非物質文化遺產清單。",
+      "cultural_significance": "涼紮反映咗華人「事死如事生」嘅傳統觀念，通過製作精美嘅祭品表達對先人嘅孝敬。雖然現代社會簡化咗祭祀儀式，但涼紮仍然係重要嘅文化遺產。",
+      "recognition_year": 2014,
+      "wikipedia_url": "https://zh.wikipedia.org/wiki/紙紮",
+      "official_website": null,
+      "references": [
+        { "title": "維基百科 - 紙紮", "url": "https://zh.wikipedia.org/wiki/紙紮" }
+      ],
+      "fun_facts": [
+        "涼紮公仔要用竹篾做骨架，再黐上紙張",
+        "傳統涼紮製作一個公仔要幾日時間",
+        "現代涼紮甚至有紙紮iPhone、紙紮飛機"
+      ],
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Paper_Offerings_Hong_Kong.jpg/800px_Paper_Offerings_Hong_Kong.jpg"
+      ]
+    },
+    {
+      "name": "大坑舞火龍",
+      "name_en": "Tai Hang Fire Dragon Dance",
+      "category": "festivals",
+      "description": "大坑舞火龍係香港中秋節期間嘅傳統活動，一條長67米嘅火龍喺街頭巡遊，場面壯觀。",
+      "description_en": "The Tai Hang Fire Dragon Dance is a traditional Mid-Autumn Festival event featuring a 67-meter dragon covered in incense sticks.",
+      "history": "大坑舞火龍起源於1880年，相傳為驅趕瘟疫而舉行。當時大坑村民扎製草龍，插滿線香，喺中秋節巡遊。經過百幾年發展，火龍已經演變成67米長、由300人舞動嘅壯觀場面。2011年列入國家級非遺，2017年成為香港首項聯合國非遺。",
+      "cultural_significance": "大坑舞火龍展現咗香港社區嘅團結同心。每年中秋，數萬市民聚集大坑觀賞，係最具代表性嘅香港傳統節慶之一。火龍身上嘅過萬支線香，象徵祈福同祝福。",
+      "recognition_year": 2011,
+      "wikipedia_url": "https://zh.wikipedia.org/wiki/大坑舞火龍",
+      "official_website": null,
+      "references": [
+        { "title": "維基百科 - 大坑舞火龍", "url": "https://zh.wikipedia.org/wiki/大坑舞火龍" }
+      ],
+      "fun_facts": [
+        "火龍長67米，由300人舞動",
+        "龍身上插超過10,000支線香",
+        "活動已經有超過140年歷史"
+      ],
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Tai_Hang_Fire_Dragon.jpg/800px_Tai_Hang_Fire_Dragon.jpg"
+      ]
+    },
+    {
+      "name": "香港潮人盂蘭勝會",
+      "name_en": "Hong Kong Yulan Festival",
+      "category": "festivals",
+      "description": "盂蘭勝會係潮汕籍居民舉行嘅傳統祭祀活動，為幽靈超度、祈求平安，以潮洲戲演出同施孤儀式為特色。",
+      "description_en": "The Yulan Festival is a traditional Chaozhou ritual for feeding hungry ghosts, featuring Teochew opera and charity rituals.",
+      "history": "盂蘭勝會係潮汕地區嘅傳統習俗，20世紀初隨著潮汕移民傳入香港。活動喺農曆七月舉行，包括搭竹戲棚、演潮洲戲、施孤派米等。香港各區潮汕同鄉會都有舉行盂蘭勝會，以油麻地、香港仔最為盛大。2011年列入國家級非遺。",
+      "cultural_significance": "盂蘭勝會體現咗潮汕人嘅慎終追遠精神同社區互助傳統。活動中嘅潮洲戲演出、免費齋宴，展現咗族群凝聚力同慈善精神。",
+      "recognition_year": 2011,
+      "wikipedia_url": "https://zh.wikipedia.org/wiki/盂蘭勝會",
+      "official_website": null,
+      "references": [
+        { "title": "維基百科 - 盂蘭勝會", "url": "https://zh.wikipedia.org/wiki/盂蘭勝會" }
+      ],
+      "fun_facts": [
+        "盂蘭勝會要連續舉行三日三夜",
+        "潮洲戲係用潮州話演唱嘅傳統戲曲",
+        "施孤係派發食物畀貧苦大眾"
+      ],
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Yulan_Festival_Hong_Kong.jpg/800px_Yulan_Festival_Hong_Kong.jpg"
+      ]
+    },
+    {
+      "name": "戲棚搭建技藝",
+      "name_en": "Bamboo Theatre Construction",
+      "category": "crafts",
+      "description": "戲棚係用竹同帆布搭建嘅臨時演出場地，為神誕、節慶提供戲曲表演場地，係香港獨特嘅建築技藝。",
+      "description_en": "Bamboo theatres are temporary performance venues built with bamboo and canvas for religious festivals and celebrations.",
+      "history": "戲棚搭建技藝喺香港有過百年歷史。傳統上，戲棚師傅用竹篾搭成骨架，再蓋上帆布，幾日之內就可以建成一個容納數百人嘅戲棚。戲棚多用於神誕、太平清醮等節慶活動。2014年，戲棚搭建技藝列入香港非物質文化遺產清單。",
+      "cultural_significance": "戲棚唔單止係演出場地，更係社區凝聚嘅中心。搭建戲棚嘅過程需要師傅精湛嘅技藝同埋社區嘅協作，展現咗香港人嘅團結精神。",
+      "recognition_year": 2014,
+      "wikipedia_url": "https://zh.wikipedia.org/wiki/戲棚",
+      "official_website": null,
+      "references": [
+        { "title": "維基百科 - 戲棚", "url": "https://zh.wikipedia.org/wiki/戲棚" }
+      ],
+      "fun_facts": [
+        "戲棚完全用竹搭建，唔用一釘一鉜",
+        "一個戲棚幾日就可以建成同埋拆走",
+        "戲棚入面要吊風扇同埋裝燈"
+      ],
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Bamboo_Theatre_Hong_Kong.jpg/800px_Bamboo_Theatre_Hong_Kong.jpg"
+      ]
+    },
+    {
+      "name": "黃大仙信俗",
+      "name_en": "Wong Tai Sin Belief",
+      "category": "folklore",
+      "description": "黃大仙信仰係香港最受歡迎嘅民間信仰之一，以「有求必應」聞名，每年吸引數以百萬計善信參拜。",
+      "description_en": "Wong Tai Sin belief is one of Hong Kong's most popular folk religions, known for 'answering every prayer'.",
+      "history": "黃大仙原名黃初平，係東晉時期嘅道士。1915年，梁仁菴道長將黃大仙畫像帶到香港，喺嗰打灣設壇供奉。1921年，黃大仙祠喺現址建成。經過百年發展，黃大仙祠已成為香港最著名的道教寺廟，每年農曆大年初一都有數十萬人搶頭炷香。2014年列入香港非遺。",
+      "cultural_significance": "黃大仙信仰體現咗香港人對美好生活嘅期盼。信徒通過求籖、參神，尋求心靈慰藉同人生指引。黃大仙祠更係香港旅遊嘅重要景點。",
+      "recognition_year": 2014,
+      "wikipedia_url": "https://zh.wikipedia.org/wiki/黃大仙",
+      "official_website": "https://www.wongtaisin.com.hk/",
+      "references": [
+        { "title": "維基百科 - 黃大仙", "url": "https://zh.wikipedia.org/wiki/黃大仙" },
+        { "title": "嗇色園", "url": "https://www.wongtaisin.com.hk/" }
+      ],
+      "fun_facts": [
+        "黃大仙祠係香港唯一可以舉行道教婚禮嘅寺廟",
+        "每年大年初一超過10萬人搶頭炷香",
+        "黃大仙「有求必應」嘅靈驗聞名中外"
+      ],
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Wong_Tai_Sin_Temple.jpg/800px_Wong_Tai_Sin_Temple.jpg"
+      ]
+    },
+    {
+      "name": "天后誕",
+      "name_en": "Tin Hau Festival",
+      "category": "festivals",
+      "description": "天后誕係慶祝海神天后（媽祖）誕辰嘅傳統節慶，喺香港漁民社區尤其盛行，各區天后廟都有舉行慶祝活動。",
+      "description_en": "The Tin Hau Festival celebrates the birthday of the sea goddess Tin Hau (Mazu), especially popular among fishing communities.",
+      "history": "天后（媽祖）係華南沿海漁民嘅保護神。香港開埠前已經有天后廟，其中茶果嶺天后廟建於1740年，係香港最古老嘅天后廟。每年農曆三月廿三天后誕，各區天后廟都有賀誕活動，包括神功戲、巡遊、宴會等。",
+      "cultural_significance": "天后誕展現咗香港漁民社區嘅傳統信仰。雖然現代漁業式微，但天后誕仍然係凝聚社區嘅重要活動，體現咗香港人對海洋嘅敬畏同感恩。",
+      "recognition_year": 2014,
+      "wikipedia_url": "https://zh.wikipedia.org/wiki/天后誕",
+      "official_website": null,
+      "references": [
+        { "title": "維基百科 - 天后誕", "url": "https://zh.wikipedia.org/wiki/天后誕" }
+      ],
+      "fun_facts": [
+        "香港有超過100間天后廟",
+        "元朗大樹下天后誕係香港最大規模",
+        "天后誕期間會有「神功戲」演出"
+      ],
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Tin_Hau_Festival_Hong_Kong.jpg/800px_Tin_Hau_Festival_Hong_Kong.jpg"
+      ]
+    }
+  ]
+}
