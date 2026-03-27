@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "HeritageHK - 香港非物質文化遺產地圖",
-  description: "探索香港豐富的非物質文化遺產，預約工作坊和導賞團",
+  description: "探索香港豐富的非物質文化遺產，預約工作坊和導賞團 (v2.0)",
 };
 
 export default function RootLayout({
