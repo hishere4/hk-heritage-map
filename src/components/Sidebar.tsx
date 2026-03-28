@@ -109,21 +109,7 @@ export default function Sidebar({ item, onClose }: SidebarProps) {
               </div>
             </div>
           </div>
-        ) : (
-          <div className="mb-4">
-            <div 
-              className="relative w-full h-48 rounded-xl overflow-hidden flex items-center justify-center"
-              style={{ 
-                background: `linear-gradient(135deg, ${getCategoryColor(item.category)}15, ${getCategoryColor(item.category)}05)` 
-              }}
-            >
-              <div className="text-center">
-                <span className="text-6xl">{icon}</span>
-                <div className="mt-2 text-xs text-gray-500">{category.zh}</div>
-              </div>
-            </div>
-          </div>
-        )}
+        ) : null}
 
         {/* 列入年份 */}
         {item.recognition_year && (
