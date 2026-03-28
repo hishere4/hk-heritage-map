@@ -1,9 +1,7 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import { HeritageItem, categoryLabels } from '@/lib/supabase';
-import { getHeritageImages } from '@/data/heritageImages';
-import Lightbox from './Lightbox';
 
 interface SidebarProps {
   item: HeritageItem | null;
@@ -21,9 +19,6 @@ const categoryIcons: Record<string, string> = {
 };
 
 export default function Sidebar({ item, onClose }: SidebarProps) {
-  const [lightboxOpen, setLightboxOpen] = useState(false);
-  const [lightboxIndex, setLightboxIndex] = useState(0);
-
   // 調試：輸出 item 數據
   useEffect(() => {
     if (item) {
@@ -32,7 +27,6 @@ export default function Sidebar({ item, onClose }: SidebarProps) {
         hasHistory: !!item.history,
         historyLength: item.history?.length,
         hasCulturalSignificance: !!item.cultural_significance,
-        imagesCount: item.images?.length || 0,
         tourAvailable: item.tour_available,
         workshopAvailable: item.workshop_available
       });
@@ -55,20 +49,6 @@ export default function Sidebar({ item, onClose }: SidebarProps) {
 
   const category = categoryLabels[item.category];
   const icon = categoryIcons[item.category];
-  
-  // 獲取圖片（後備機制）
-  const dbImages = item.images || [];
-  const fallbackImages = getHeritageImages(item.name);
-  const images = dbImages.length > 0 
-    ? dbImages.map(url => ({ url, caption: item.name }))
-    : fallbackImages;
-
-  console.log('Images for', item.name, ':', images.length);
-
-  const openLightbox = (index: number) => {
-    setLightboxIndex(index);
-    setLightboxOpen(true);
-  };
 
   return (
     <>
@@ -99,70 +79,32 @@ export default function Sidebar({ item, onClose }: SidebarProps) {
             )}
           </div>
 
-          {/* 圖片庫 */}
-          {images.length > 0 && (
-            <div className="mb-4">
-              <div 
-                className="relative w-full h-56 rounded-lg overflow-hidden cursor-pointer group bg-gray-100"
-                onClick={() => openLightbox(0)}
-              >
-                <img
-                  src={images[0].url}
-                  alt={images[0].caption || item.name}
-                  className="w-full h-full object-cover"
-                  loading="lazy"
-                  onError={(e) => {
-                    console.error('Image failed:', images[0].url);
-                    // 顯示 placeholder
-                    const target = e.target as HTMLImageElement;
-                    target.style.display = 'none';
-                    const parent = target.parentElement;
-                    if (parent) {
-                      parent.innerHTML = `
-                        <div class="w-full h-full flex flex-col items-center justify-center text-gray-400">
-                          <span class="text-4xl mb-2">🏛️</span>
-                          <span class="text-sm">${item.name}</span>
-                        </div>
-                      `;
-                    }
-                  }}
-                />
-                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center pointer-events-none">
-                  <span className="text-white opacity-0 group-hover:opacity-100 transition-opacity text-sm font-medium">
-                    🔍 點擊放大
-                  </span>
-                </div>
+          {/* 圖片區域 - 用類別圖標同顏色做視覺設計 */}
+          <div className="mb-4">
+            <div 
+              className={`relative w-full h-48 rounded-xl overflow-hidden ${category?.color || 'bg-gray-500'} bg-opacity-10 flex items-center justify-center`}
+              style={{ backgroundColor: category?.color ? undefined : '#f3f4f6' }}
+            >
+              {/* 背景漸變 */}
+              <div className={`absolute inset-0 opacity-20 ${category?.color || 'bg-gray-400'}`} 
+                style={{ 
+                  background: category?.color 
+                    ? `linear-gradient(135deg, ${category.color.replace('bg-', '')}40, ${category.color.replace('bg-', '')}20)` 
+                    : 'linear-gradient(135deg, #e5e7eb, #f3f4f6)'
+                }}
+              />
+              
+              {/* 主要圖標 */}
+              <div className="relative z-10 text-center">
+                <span className="text-6xl">{icon}</span>
                 
-                {images.length > 1 && (
-                  <div className="absolute top-2 right-2 bg-black/60 text-white text-xs px-2 py-1 rounded-full pointer-events-none">
-                    1 / {images.length}
-                  </div>
-                )}
-              </div>
-
-              {images.length > 1 && (
-                <div className="flex gap-2 mt-2 overflow-x-auto pb-1">
-                  {images.slice(1).map((img, idx) => (
-                    <div
-                      key={idx + 1}
-                      className="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden cursor-pointer hover:opacity-80 bg-gray-100"
-                      onClick={() => openLightbox(idx + 1)}
-                    >
-                      <img
-                        src={img.url}
-                        alt={img.caption || `${item.name} ${idx + 2}`}
-                        className="w-full h-full object-cover"
-                        loading="lazy"
-                        onError={(e) => {
-                          (e.target as HTMLImageElement).style.display = 'none';
-                        }}
-                      />
-                    </div>
-                  ))}
+                {/* 提示用戶可以添加圖片 */}
+                <div className="mt-4 text-xs text-gray-500">
+                  {category?.zh}
                 </div>
-              )}
+              </div>
             </div>
-          )}
+          </div>
 
           {/* 列入年份 */}
           {item.recognition_year && (
@@ -245,13 +187,6 @@ export default function Sidebar({ item, onClose }: SidebarProps) {
           </div>
         </div>
       </div>
-
-      <Lightbox
-        images={images}
-        isOpen={lightboxOpen}
-        initialIndex={lightboxIndex}
-        onClose={() => setLightboxOpen(false)}
-      />
     </>
   );
 }
