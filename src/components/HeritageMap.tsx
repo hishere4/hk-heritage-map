@@ -1,43 +1,11 @@
 'use client';
 
 import { useState, useMemo } from 'react';
-import { MapContainer, TileLayer, Marker, useMap, useMapEvents } from 'react-leaflet';
+import { MapContainer, TileLayer, Marker, useMap, useMapEvents, Popup } from 'react-leaflet';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import { HeritageItem, categoryLabels } from '@/lib/supabase';
-
-// 簡化嘅類別顏色
-const categoryColors: Record<HeritageItem['category'], string> = {
-  performing_arts: '#8b5cf6',   // 紫
-  crafts: '#d97706',            // 琥珀
-  festivals: '#ef4444',         // 紅
-  oral_traditions: '#3b82f6',   // 藍
-  food_culture: '#f97316',      // 橙
-  martial_arts: '#22c55e',      // 綠
-  folklore: '#14b8a6',          // 青
-};
-
-// 簡潔圓點標記
-const createSimpleIcon = (category: HeritageItem['category'], isSelected: boolean) => {
-  const color = categoryColors[category];
-  const size = isSelected ? 28 : 20;
-  
-  return L.divIcon({
-    className: 'simple-marker',
-    html: `<div style="
-      width: ${size}px;
-      height: ${size}px;
-      background-color: ${color};
-      border-radius: 50%;
-      border: 3px solid white;
-      box-shadow: ${isSelected ? '0 4px 12px rgba(0,0,0,0.3)' : '0 2px 6px rgba(0,0,0,0.2)'};
-      transition: all 0.2s ease;
-      cursor: pointer;
-    "></div>`,
-    iconSize: [size, size],
-    iconAnchor: [size / 2, size / 2],
-  });
-};
+import { categoryColors, createMarkerIcon } from './CategoryIcons';
 
 // 地圖視圖更新
 function MapUpdater({ center, zoom }: { center: [number, number]; zoom: number }) {
@@ -70,6 +38,40 @@ function ZoomControls() {
   );
 }
 
+// 自定義 Popup 內容
+function HeritagePopup({ item }: { item: HeritageItem }) {
+  const category = categoryLabels[item.category];
+  
+  return (
+    <div className="min-w-[180px] p-3">
+      <div className="flex items-center gap-2 mb-2">
+        <span className="text-lg">{getEmoji(item.category)}</span>
+        <span className={`text-xs px-2 py-0.5 rounded-full text-white ${category.color}`}>
+          {category.zh}
+        </span>
+      </div>
+      <h3 className="font-bold text-gray-900 mb-1">{item.name}</h3>
+      <p className="text-xs text-gray-500 line-clamp-2">{item.description}</p>
+      <div className="mt-2 pt-2 border-t border-gray-100">
+        <span className="text-xs text-gray-400">點擊查看詳情 →</span>
+      </div>
+    </div>
+  );
+}
+
+function getEmoji(category: HeritageItem['category']): string {
+  const emojis: Record<HeritageItem['category'], string> = {
+    performing_arts: '🎭',
+    crafts: '✂️',
+    festivals: '🏮',
+    oral_traditions: '🎵',
+    food_culture: '🫖',
+    martial_arts: '👊',
+    folklore: '📜',
+  };
+  return emojis[category];
+}
+
 interface HeritageMapProps {
   items: HeritageItem[];
   center: [number, number];
@@ -79,6 +81,25 @@ interface HeritageMapProps {
 }
 
 export default function HeritageMap({ items, center, zoom, selectedItem, onItemClick }: HeritageMapProps) {
+  const [hoveredId, setHoveredId] = useState<string | null>(null);
+  
+  // 為每個項目創建圖標
+  const markerIcons = useMemo(() => {
+    const icons: Record<string, L.DivIcon> = {};
+    items.forEach(item => {
+      const isSelected = selectedItem?.id === item.id;
+      const isHovered = hoveredId === item.id;
+      icons[item.id] = L.divIcon({
+        className: 'custom-marker',
+        html: createMarkerIcon(item.category, isSelected, isHovered),
+        iconSize: [isSelected ? 40 : 32, isSelected ? 40 : 32],
+        iconAnchor: [isSelected ? 20 : 16, isSelected ? 20 : 16],
+        popupAnchor: [0, -20],
+      });
+    });
+    return icons;
+  }, [items, selectedItem, hoveredId]);
+
   return (
     <MapContainer
       center={center}
@@ -89,7 +110,7 @@ export default function HeritageMap({ items, center, zoom, selectedItem, onItemC
     >
       {/* 極簡地圖風格 */}
       <TileLayer
-        attribution='&copy; <a href="https://carto.com/">CARTO</a>'
+        attribution='© <a href="https://carto.com/">CARTO</a>'
         url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"
       />
       
@@ -100,11 +121,21 @@ export default function HeritageMap({ items, center, zoom, selectedItem, onItemC
         <Marker
           key={item.id}
           position={[item.lat, item.lng]}
-          icon={createSimpleIcon(item.category, selectedItem?.id === item.id)}
+          icon={markerIcons[item.id]}
           eventHandlers={{
             click: () => onItemClick(item),
+            mouseover: () => setHoveredId(item.id),
+            mouseout: () => setHoveredId(null),
           }}
-        />
+        >
+          <Popup 
+            closeButton={false}
+            className="heritage-popup"
+            offset={[0, -10]}
+          >
+            <HeritagePopup item={item} />
+          </Popup>
+        </Marker>
       ))}
     </MapContainer>
   );
