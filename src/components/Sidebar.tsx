@@ -146,23 +146,60 @@ export default function Sidebar({ item, onClose }: SidebarProps) {
 
         {/* 內容章節 */}
         <div className="px-5 pb-6 space-y-4">
+          
+          {/* 必睇亮點 */}
+          {(item as any).highlights && (
+            <div className="bg-gradient-to-br from-blue-50 to-white rounded-2xl p-5 border border-blue-100">
+              <div className="flex items-center gap-2 mb-3">
+                <div className="w-8 h-8 rounded-lg bg-white shadow-sm flex items-center justify-center text-sm">⭐</div>
+                <h2 className="font-bold text-gray-900">必睇亮點</h2>
+              </div>
+              <ul className="space-y-2">
+                {(item as any).highlights.map((highlight: string, idx: number) => (
+                  <li key={idx} className="flex items-start gap-2 text-sm text-gray-700">
+                    <span className="text-blue-500 mt-0.5">•</span>
+                    <span>{highlight}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+
           {/* 簡介卡片 */}
           <div className="bg-gradient-to-br from-gray-50 to-white rounded-2xl p-5 border border-gray-100">
             <div className="flex items-center gap-2 mb-3">
-              <div className="w-8 h-8 rounded-lg bg-white shadow-sm flex items-center justify-center text-sm">
-                📖
-              </div>
+              <div className="w-8 h-8 rounded-lg bg-white shadow-sm flex items-center justify-center text-sm">📖</div>
               <h2 className="font-bold text-gray-900">簡介</h2>
             </div>
             <p className="text-gray-700 text-sm leading-relaxed">{item.description}</p>
           </div>
 
+          {/* 體驗方式 */}
+          {(item as any).how_to_experience && (
+            <div className="bg-gradient-to-br from-emerald-50 to-white rounded-2xl p-5 border border-emerald-100">
+              <div className="flex items-center gap-2 mb-3">
+                <div className="w-8 h-8 rounded-lg bg-white shadow-sm flex items-center justify-center text-sm">🎯</div>
+                <h2 className="font-bold text-gray-900">體驗方式</h2>
+              </div>
+              <p className="text-gray-700 text-sm leading-relaxed">{(item as any).how_to_experience}</p>
+            </div>
+          )}
+
+          {/* 最佳時間 */}
+          {(item as any).best_time && (
+            <div className="bg-gradient-to-br from-orange-50 to-white rounded-2xl p-5 border border-orange-100">
+              <div className="flex items-center gap-2 mb-3">
+                <div className="w-8 h-8 rounded-lg bg-white shadow-sm flex items-center justify-center text-sm">📅</div>
+                <h2 className="font-bold text-gray-900">最佳體驗時間</h2>
+              </div>
+              <p className="text-gray-700 text-sm leading-relaxed">{(item as any).best_time}</p>
+            </div>
+          )}
+
           {/* 歷史卡片 */}
           <div className="bg-gradient-to-br from-gray-50 to-white rounded-2xl p-5 border border-gray-100">
             <div className="flex items-center gap-2 mb-3">
-              <div className="w-8 h-8 rounded-lg bg-white shadow-sm flex items-center justify-center text-sm">
-                ⏳
-              </div>
+              <div className="w-8 h-8 rounded-lg bg-white shadow-sm flex items-center justify-center text-sm">⏳</div>
               <h2 className="font-bold text-gray-900">歷史</h2>
             </div>
             <p className="text-gray-700 text-sm leading-relaxed">
@@ -173,9 +210,7 @@ export default function Sidebar({ item, onClose }: SidebarProps) {
           {/* 文化意義卡片 */}
           <div className="bg-gradient-to-br from-gray-50 to-white rounded-2xl p-5 border border-gray-100">
             <div className="flex items-center gap-2 mb-3">
-              <div className="w-8 h-8 rounded-lg bg-white shadow-sm flex items-center justify-center text-sm">
-                💎
-              </div>
+              <div className="w-8 h-8 rounded-lg bg-white shadow-sm flex items-center justify-center text-sm">💎</div>
               <h2 className="font-bold text-gray-900">文化意義</h2>
             </div>
             <p className="text-gray-700 text-sm leading-relaxed">
@@ -183,16 +218,71 @@ export default function Sidebar({ item, onClose }: SidebarProps) {
             </p>
           </div>
 
+          {/* 體驗貼士 */}
+          {(item as any).tips && (
+            <div className="bg-gradient-to-br from-purple-50 to-white rounded-2xl p-5 border border-purple-100">
+              <div className="flex items-center gap-2 mb-3">
+                <div className="w-8 h-8 rounded-lg bg-white shadow-sm flex items-center justify-center text-sm">💡</div>
+                <h2 className="font-bold text-gray-900">體驗貼士</h2>
+              </div>
+              <ul className="space-y-2">
+                {(item as any).tips.map((tip: string, idx: number) => (
+                  <li key={idx} className="flex items-start gap-2 text-sm text-gray-700">
+                    <span className="text-purple-500 mt-0.5">💡</span>
+                    <span>{tip}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+
           {/* 趣聞（如果有） */}
           {item.fun_facts && (
             <div className="bg-gradient-to-br from-amber-50 to-white rounded-2xl p-5 border border-amber-100">
               <div className="flex items-center gap-2 mb-3">
-                <div className="w-8 h-8 rounded-lg bg-white shadow-sm flex items-center justify-center text-sm">
-                  ✨
-                </div>
+                <div className="w-8 h-8 rounded-lg bg-white shadow-sm flex items-center justify-center text-sm">✨</div>
                 <h2 className="font-bold text-amber-900">趣聞</h2>
               </div>
               <p className="text-amber-800 text-sm leading-relaxed">{item.fun_facts}</p>
+            </div>
+          )}
+
+          {/* 地址及交通 */}
+          {(item.address || (item as any).transportation) && (
+            <div className="bg-gradient-to-br from-gray-50 to-white rounded-2xl p-5 border border-gray-100">
+              <div className="flex items-center gap-2 mb-3">
+                <div className="w-8 h-8 rounded-lg bg-white shadow-sm flex items-center justify-center text-sm">📍</div>
+                <h2 className="font-bold text-gray-900">地點及交通</h2>
+              </div>
+              {item.address && (
+                <p className="text-gray-700 text-sm leading-relaxed mb-2">
+                  <span className="font-medium">地址：</span>{item.address}
+                </p>
+              )}
+              {(item as any).transportation && (
+                <p className="text-gray-700 text-sm leading-relaxed">
+                  <span className="font-medium">交通：</span>{(item as any).transportation}
+                </p>
+              )}
+            </div>
+          )}
+
+          {/* 參考資料 */}
+          {item.references && item.references.length > 0 && (
+            <div className="bg-gradient-to-br from-gray-50 to-white rounded-2xl p-5 border border-gray-100">
+              <div className="flex items-center gap-2 mb-3">
+                <div className="w-8 h-8 rounded-lg bg-white shadow-sm flex items-center justify-center text-sm">🔗</div>
+                <h2 className="font-bold text-gray-900">參考資料</h2>
+              </div>
+              <ul className="space-y-2">
+                {item.references.map((ref, idx) => (
+                  <li key={idx}>
+                    <a href={ref.url} target="_blank" rel="noopener noreferrer" className="text-sm text-blue-600 hover:underline">
+                      {ref.title}
+                    </a>
+                  </li>
+                ))}
+              </ul>
             </div>
           )}
         </div>
